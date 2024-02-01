@@ -9,5 +9,9 @@ namespace AtividadePOO11.Entities
     internal class Departamento
     {
         public String Nome { get; set; }
+
+        public Departamento() { }
+
+        public Departamento(String nome) {  Nome = nome; }
     }
 }

@@ -12,10 +12,17 @@ namespace AtividadePOO11.Entities
         public NivelTrabalhador Nivel { get; set; }
         public double BaseSalarial { get; set; }
 
+        public Trabalhador() { }
+        public Trabalhador(String Nome, NivelTrabalhador Nivel, double BaseSalarial)
+        { 
+            this.Nome = Nome;
+            this.Nivel = Nivel;
+            this.BaseSalarial = BaseSalarial;
+        }
 
         public void AddContrato(ContratoHora contratoHora)
         {
-            contratoHora.Horas =
+            
         }
 
 
