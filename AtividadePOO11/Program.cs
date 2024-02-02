@@ -9,7 +9,7 @@ namespace AtividadePOO11
         {
 
             Console.Write("Digite o nome do departamento: ");
-            String dept = Console.ReadLine();
+            String deptNome = Console.ReadLine();
             
             Console.WriteLine("Entre os dados do funcionário: ");
 
@@ -44,7 +44,7 @@ namespace AtividadePOO11
             Console.Write("Base salarial: ");
             double BaseSalarial = Convert.ToDouble(Console.ReadLine());
                                     
-            Departamento departamento = new Departamento(dept);
+            Departamento departamento = new Departamento(deptNome);
             Trabalhador trabalhador = new Trabalhador(nome, Nivel, BaseSalarial, departamento);
 
             Console.Write("Quantos contratos para este trabalhador? ");
@@ -76,9 +76,9 @@ namespace AtividadePOO11
 
             int Ano = int.Parse(DataRenda.Substring(3));
 
-            Console.WriteLine($"Nome: {nome}");
+            Console.WriteLine($"Nome: {trabalhador.Nome}");
 
-            Console.WriteLine($"Departamento: {departamento.Nome}");
+            Console.WriteLine($"Departamento: {trabalhador.Departamento.Nome}");
 
             Console.WriteLine($"Renda para {DataRenda}: {trabalhador.Renda(Ano, Mes).ToString("F2")}");
 
