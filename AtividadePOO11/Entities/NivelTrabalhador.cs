@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace AtividadePOO11.Entities
 {
-    enum NivelTrabalhador
+    enum NivelTrabalhador : int
     {
-        junior = 0,
+        Junior = 0,
         Intermediario = 1,
         Senior = 2
     }

@@ -8,9 +8,11 @@ namespace AtividadePOO11.Entities
 {
     internal class ContratoHora
     {
-        DateTime Data { get; set; }
+        public DateTime Data { get; set; }
         double ValorPorHora { get; set; }
         public int Horas { get; set; }
+
+
 
         public ContratoHora()
         {
